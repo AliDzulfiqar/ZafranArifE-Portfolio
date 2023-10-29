@@ -53,16 +53,16 @@ a {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 40px;
 }
 
 h2 {
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 500;
 }
 
 p {
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -100,17 +100,17 @@ nav {
 
 /* LANDING */
 #landing {
-    min-height: 85vh;
+    min-height: 80vh;
 }
 
 .container {
-    padding: 50px 0;
+    padding: 20px 0;
     width: 100%;
 }
 
 .row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -119,21 +119,21 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
 }
 
 .landing__wrapper--left {
-    width: 50%;
+    width: 40%;
+    justify-content: end;
 }
 
 .profile-picture {
-    width: 80%
+    width: 75%
 }
 
 .landing__wrapper--right {
-    width: 80%;
-    padding-left: 20px;
+    width: 60%;
 }
+
 .scroll {
     position: absolute;
     bottom: 20px; 
@@ -171,9 +171,27 @@ nav {
     }
 }
 
+.social__list {
+    margin-top: 16px;
+    display: flex;
+}
+
+.social__link {
+    background-color: black;
+    color: white;
+    padding: 6px;
+    width: 32px;
+    margin-right: 12px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 /* TECHSTACK */
 #technology__stack {
-    min-height: 50vh;
+    min-height: 100vh;
 }
 
 .techstack__wrapper {
