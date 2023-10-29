@@ -94,7 +94,7 @@ nav {
 
 /* LANDING */
 #landing {
-    min-height: 50vh;
+    min-height: 85vh;
 }
 
 .container {
@@ -129,18 +129,24 @@ nav {
     padding-left: 20px;
 }
 
+/* TECHSTACK */
+
+
 /* ABOUT */
 .about__wrapper {
     padding: 20px;
 }
 
-.about__title{
+.section__title{
     text-align: center;
 }
 
-.about__para {
+.section__para {
     text-align: left;
 }
+
+/* PROJECTS */
+
 
 /* FOOTER */
 footer {
