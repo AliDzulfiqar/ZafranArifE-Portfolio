@@ -249,6 +249,9 @@ nav {
 
 .section__title{
     text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+    position: relative;
 }
 
 .section__para {
@@ -256,8 +259,109 @@ nav {
 }
 
 /* PROJECTS */
+.project {
+    margin-bottom: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.project__pdf {
+    height: 80vh;
+    width: 80vw;
+}
 
+.project__description--title {
+    font-size: 32px;
+    text-align: justify;
+}
+
+.project__description--sub-title {
+    margin-top: 8px;
+}
+
+.project__description--link {
+    color: white;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.project__description--para {
+    margin: 16px 0;
+}
+
+/* ACTIVITIES */
+
+.activities {
+    margin-bottom: 135px;
+}
+
+.activities__image {
+    width: 100%;
+    transition: all 600ms ease;
+}
+
+.activities__wrapper {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 20px 80px 0 rgba(0,0,0,0.45);
+    overflow: hidden;
+}
+
+.activities__wrapper:hover .activities__description {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.activities__wrapper:hover .activities__image {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
+.activities__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(100%);
+    color: white;
+    opacity: 0;
+    transition: opacity 300ms, transform 450ms ease;
+    max-width: 550px;
+}
+
+.activities__wrapper:hover .activities__wrapper--background {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+.project__wrapper--background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1d25;
+    opacity: 0.7;
+    visibility: hidden;
+}
+
+.project__description--title {
+    font-size: 40px;
+}
+
+.project__description--sub-title {
+    margin-top: 8px;
+}
+
+.project__description--link {
+    color: white;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+.project__description--para {
+    margin: 16px 0;
+}
 /* FOOTER */
 footer {
     background: #242424;
