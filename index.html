@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Zafran Arif's E-Portfolio</title>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
@@ -51,13 +52,61 @@
           </li>
           <li class="nav__link">
             <a
-              href="publication.html"
+              onclick="toggleModal()"
               class="nav__link--anchor link__hover-effect link__hover-effect--black click"
               >CONTACT</a
             >
           </li>
         </ul>
       </nav>
+      <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">Let's connect!</h3>
+            <p class="modal__para">
+              <br>
+                My name is <strong class="blue">Zafran</strong>.
+                <br>
+                <br>
+                Send me a chat.
+
+                **Needs copywriting
+                <br>
+                <br>
+                
+            </p>
+            
+        </div>
+        <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="exit()"></i>
+            <h3 class="modal__title modal__title--contact">
+                Let's have a chat!
+            </h3>
+            <h3 class="modal__sub-title modal__title--contact">
+                I'm currently open to new opportunities.
+            </h3>
+            <form onsubmit="contact(event)" id="contact__form">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input type="text" class="input" name="user_name" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input type="email" class="input" name="user_email" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea type="text" class="input" name="message" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit">Send it my way!</button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thanks for the message! Looking forward to speaking to you soon!
+            </div>
+        </div>
+      </div>
     </section>
 
     <section id="landing">
