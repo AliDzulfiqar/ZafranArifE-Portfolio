@@ -291,7 +291,6 @@ nav {
 }
 
 /* ACTIVITIES */
-
 .activities {
     margin-bottom: 135px;
 }
@@ -334,7 +333,7 @@ nav {
     visibility: visible;
 }
 
-.project__wrapper--background {
+.activities__wrapper--background {
     position: absolute;
     top: 0;
     left: 0;
@@ -345,23 +344,24 @@ nav {
     visibility: hidden;
 }
 
-.project__description--title {
+.activities__description--title {
     font-size: 40px;
 }
 
-.project__description--sub-title {
+.activities__description--sub-title {
     margin-top: 8px;
 }
 
-.project__description--link {
+.activities__description--link {
     color: white;
     font-size: 20px;
     margin-right: 16px;
 }
 
-.project__description--para {
+.activities__description--para {
     margin: 16px 0;
 }
+
 /* FOOTER */
 footer {
     background: #242424;
