@@ -809,13 +809,25 @@ textarea:focus {
 }
 
 .dark-theme .scroll__icon {
-  border: #fffbf8;
-}
-
-.dark-theme .scroll__icon::after {
-  background-color: #fffbf8;
-}
-
+    width: 20px;
+    height: 30px;
+    border: 2px solid #fffbf8;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dark-theme .scroll__icon::after {
+    background-color: #fffbf8;
+    content: "";
+    width: 4px;
+    height: 6px;
+    background-color: #fffbf8;
+    border-radius: 2px;
+    animation: scroll 1000ms infinite alternate-reverse;
+  }
+  
 .dark-theme .social__link {
   background-color: #fffbf8;
   color: #231f20;
