@@ -859,6 +859,7 @@ textarea:focus {
 
 .dark-theme .form__submit:hover {
   border-color: #231f20;
+  color: #231f20;
   background-color: transparent;
 }
 
