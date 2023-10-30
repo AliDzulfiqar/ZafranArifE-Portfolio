@@ -16,7 +16,7 @@ li {
 }
 
 section {
-    background-color: rgb(245, 245, 245);
+    background-color: #fffbf8;
     transition: all 600ms ease;
 }
 
@@ -45,7 +45,7 @@ section {
 }
 
 .link__hover-effect--black::after {
-    background: #242424;
+    background: #004aad;
 }
 
 a {
@@ -67,15 +67,15 @@ p {
 }
 
 nav, .scroll, .header {
-    opacity: 0.5;
+    opacity: 1;
     visibility: visible;
     transition: all 600ms 800ms;
 }
 
 input, textarea {
     width: 100%;
-    background: #242424;
-    color: #fff;
+    background: #231f20;
+    color: #fffbf8;
     outline: none;
     border: 1px solid #c0c4cc;
     border-top: none;
@@ -119,6 +119,7 @@ nav {
 
 .nav__link--list {
     display: flex;
+    font-style: italic;
 }
 
 .nav__link {
@@ -127,7 +128,16 @@ nav {
 
 .nav__link--anchor {
     font-size: 16px;
-    color: #242424;
+    color: #231f20;
+}
+
+.nav__link--anchor:hover {
+    font-size: 16px;
+    color: #004aad;
+}
+
+.nav__link--active {
+    color: #004aad;
 }
 
 /* LANDING */
@@ -177,7 +187,7 @@ nav {
 .scroll__icon {
     width: 20px;
     height: 30px;
-    border: 2px solid #242424;
+    border: 2px solid #231f20;
     border-radius: 24px;
     display: flex;
     align-items: center;
@@ -185,11 +195,11 @@ nav {
 }
 
 .scroll__icon::after {
-    background-color: #242424;
+    background-color: #231f20;
     content: "";
     width: 4px;
     height: 6px;
-    background-color: #242424;
+    background-color: #231f20;
     border-radius: 2px;
     animation: scroll 1000ms infinite alternate-reverse;
 }
@@ -499,7 +509,7 @@ nav {
 }
 
 .modal__contact {
-    background-color: #242424;
+    background-color: #231f20;
     color: white;
     transform: translateX(110%);
 }
@@ -520,7 +530,7 @@ nav {
 }
 
 .form__submit:hover {
-    border-color: #fff;
+    border-color: #fffbf8;
     background-color: transparent;
 }
 
@@ -547,7 +557,7 @@ nav {
 }
 
 .modal__overlay--loading {
-    background-color: #242424;
+    background-color: #231f20;
     font-size: 80px;
 }
 
@@ -577,7 +587,7 @@ nav {
     position: absolute;
     top: 30px;
     right: 40px;
-    color: #fff;
+    color: #fffbf8;
     font-size: 36px;
     z-index: 100;
 }
@@ -595,7 +605,7 @@ nav {
 
 /* FOOTER */
 footer {
-    background: #242424;
+    background: #231f20;
     display: flex;
     padding: 3% 0;
     position: relative;
