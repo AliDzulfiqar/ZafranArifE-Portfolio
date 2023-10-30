@@ -386,20 +386,37 @@ nav {
 }
 
 /* ACTIVITIES */
+.activities__title {
+    text-align: center;
+    font-size: 48px;
+    position: relative;
+    font-family: 'League Spartan', sans-serif;
+    margin-bottom: 80px;
+}
+
+.activities__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
 .activities {
-    margin-bottom: 135px;
+    width: 40%;
+    display: flex;
+    position: relative;
+    margin: 20px;
 }
 
 .activities__image {
     width: 100%;
     transition: all 600ms ease;
+    border-radius: 20px;
 }
 
 .activities__wrapper {
     position: relative;
-    border-radius: 20px;
-    box-shadow: 0 20px 80px 0 rgba(0,0,0,0.45);
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .activities__wrapper:hover .activities__description {
@@ -415,12 +432,12 @@ nav {
 .activities__description {
     position: absolute;
     top: 50%;
-    left: 90px;
+    left: 10%;
     transform: translateY(100%);
     color: white;
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
-    max-width: 550px;
+    max-width: 300px;
 }
 
 .activities__wrapper:hover .activities__wrapper--background {
@@ -440,7 +457,7 @@ nav {
 }
 
 .activities__description--title {
-    font-size: 40px;
+    font-size: 16px;
 }
 
 .activities__description--sub-title {
@@ -449,12 +466,13 @@ nav {
 
 .activities__description--link {
     color: white;
-    font-size: 20px;
+    font-size: 10px;
     margin-right: 16px;
 }
 
 .activities__description--para {
     margin: 16px 0;
+    font-size: 12px;
 }
 
 /* MODAL */
