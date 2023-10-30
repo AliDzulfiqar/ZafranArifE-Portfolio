@@ -312,7 +312,6 @@ nav {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 32px;
 }
 
 .techstack__name {
@@ -329,6 +328,7 @@ nav {
 .about__wrapper {
     padding: 20px;
     display: flex;
+    overflow: hidden;
 }
 
 .about__wrapper--right {
