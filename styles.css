@@ -61,6 +61,18 @@ section {
     color: #004aad;
 }
 
+.dark-theme .light__mode--white {
+    color: #231f20;
+}
+
+.dark-theme .light__mode--blue {
+    color: #0277b5;
+}
+
+.dark-theme .light__mode--black {
+    color: #fffbf8;
+}
+
 a {
     text-decoration: none;
 }
@@ -676,4 +688,30 @@ footer {
 
 .footer__social--link {
     margin: 0 24px;
+}
+
+/* DARK MODE */
+.dark-theme section {
+    background-color: #231f20;
+}
+
+.dark-theme .scroll__icon {
+    border-color: white;
+}
+
+.dark-theme .nav__link--anchor:hover,
+.dark-theme .nav__link--active,
+.dark-theme .link__hover-effect,
+.dark-theme .link__hover-effect--black{
+    color: #0277b5;
+}
+
+.dark-theme .nav__link--anchor {
+    color: #fffbf8;
+}
+
+
+.dark-theme .scroll__icon::after,
+.dark-theme .link__hover-effect--black::after {
+    background-color: white;
 }

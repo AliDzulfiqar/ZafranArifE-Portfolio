@@ -1,5 +1,5 @@
 let isModalOpen = false;
-const scaleFactor = 1 / 20
+let isDarkMode = false
 
 function exit() {
     toggleModal()
@@ -39,4 +39,15 @@ function contact(event) {
                 "The email service is temporatily unavailable. Please contact me directly on malidzulfiqar@gmail.com"
             )
         }) 
+}
+
+function toggleContrast() {
+    isDarkMode = !isDarkMode
+    if(isDarkMode){
+        document.body.classList += " dark-theme"
+    }  
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+    
 }
