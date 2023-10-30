@@ -339,12 +339,12 @@ nav {
 .about__wrapper--right {
   width: 20%;
   overflow: hidden;
-  /* position: relative; */
 }
 
 .about__banner {
   position: absolute;
-  right: -70%;
+  right: -30%;
+  bottom: -60%;
   z-index: 1;
   overflow: hidden;
 }
