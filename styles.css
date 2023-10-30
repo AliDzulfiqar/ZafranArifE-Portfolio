@@ -429,15 +429,17 @@ nav {
 }
 
 .activities__image {
-  width: 100%;
+  max-width: 100%;
   transition: all 600ms ease;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .activities__wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
+  max-height: 800px;
 }
 
 .activities__wrapper:hover .activities__description {
@@ -458,7 +460,7 @@ nav {
   color: white;
   opacity: 0;
   transition: opacity 300ms, transform 450ms ease;
-  max-width: 300px;
+  max-width: 600px;
 }
 
 .activities__wrapper:hover .activities__wrapper--background {
@@ -478,22 +480,22 @@ nav {
 }
 
 .activities__description--title {
-  font-size: 16px;
+  font-size: 40px;
 }
 
 .activities__description--sub-title {
-  margin-top: 8px;
+  margin-top: 20px;
 }
 
 .activities__description--link {
   color: white;
-  font-size: 10px;
+  font-size: 20px;
   margin-right: 16px;
 }
 
 .activities__description--para {
   margin: 16px 0;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 /*CAROUSEL*/
@@ -512,8 +514,9 @@ nav {
   overflow-x: scroll;
   scroll-behavior: smooth;
   list-style: none;
-  margin: 0;
+  margin-bottom: 100px;
   padding: 0;
+  border-radius: 20px;
 }
 
 .slide-arrow {
@@ -551,8 +554,8 @@ nav {
 }
 
 .slide {
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 120%;
   flex: 1 0 100%;
 }
 
