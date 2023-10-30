@@ -180,7 +180,7 @@ nav {
 
 .row {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 12px;
 }
@@ -189,7 +189,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
 }
 
 .landing__wrapper--left {
@@ -284,9 +283,8 @@ nav {
 }
 
 .techstack {
-    width: 25%;
+    width: 20%;
     display: flex;
-    justify-content: center;
     position: relative;
 }
 
@@ -318,19 +316,44 @@ nav {
 /* ABOUT */
 .about__wrapper {
     padding: 20px;
+    display: flex;
+}
+
+.about__wrapper--right {
+    width: 20%;
+}
+
+.about__banner {
+    position: absolute;
+    right: -70%;
+    z-index: 1;
+}
+
+.about__wrapper--left {
+    width: 80%;
+    z-index: 2;
+}
+
+.about__title{
+    text-align: start;
+    font-size: 48px;
+    position: relative;
+    font-family: 'League Spartan', sans-serif;
 }
 
 .section__title{
     text-align: center;
     font-size: 48px;
-    margin-bottom: 60px;
     position: relative;
+    font-family: 'League Spartan', sans-serif;
 }
 
 .section__para {
     text-align: justify;
+    font-weight: 600;
 }
 
+.about__wrapper--right
 /* PROJECTS */
 .project {
     margin-bottom: 135px;
