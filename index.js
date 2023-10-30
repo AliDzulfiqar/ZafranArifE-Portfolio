@@ -1,5 +1,5 @@
 let isModalOpen = false;
-let isDarkMode = false
+let isDarkMode = false;
 
 function exit() {
     toggleModal()
