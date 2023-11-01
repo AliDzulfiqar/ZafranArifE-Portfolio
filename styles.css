@@ -169,12 +169,12 @@ nav {
 .landing__intro {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 80px;
+  font-size: 90px;
 }
 
 .landing__title {
   font-family: "League Spartan", sans-serif;
-  font-size: 48px;
+  font-size: 80px;
   color: #231f20;
 }
 
@@ -187,7 +187,7 @@ nav {
 
 .landing__description {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 
