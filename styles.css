@@ -411,21 +411,22 @@ nav {
 }
 
 /* PROJECTS */
-#projects {
-  height: 70vh;
-}
 .project__wrapper {
+  min-height: 70vh;
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .project__wrapper--left {
   width: 40%;
+  text-align: center;
 }
 
 .project__wrapper--right {
   width: 40%;
+  text-align: center;
 }
 
 .project__wrapper--title {
