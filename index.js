@@ -19,31 +19,6 @@ function toggleModal() {
   document.body.classList += " modal--open";
 }
 
-function contact(event) {
-  event.preventDefault();
-  const loading = document.querySelector(".modal__overlay--loading");
-  const success = document.querySelector(".modal__overlay--success");
-  loading.classList += " modal__overlay--visible";
-
-  emailjs
-    .sendForm(
-      "service_wp048se",
-      "template_si8f8fp",
-      event.target,
-      "IoiwiKiSBN_lWY9MM"
-    )
-    .then(() => {
-      loading.classList.remove("modal__overlay--visible");
-      setTimeout((success.classList += " modal__overlay--visible"), 3000);
-    })
-    .catch(() => {
-      loading.classList.remove("modal__overlay--visible");
-      alert(
-        "The email service is temporatily unavailable. Please contact me directly on malidzulfiqar@gmail.com"
-      );
-    });
-}
-
 let isDarkMode = localStorage.getItem("isDarkMode") === "true" || false;
 
 function toggleContrast() {
@@ -76,3 +51,17 @@ prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
 });
+
+const scaleFactor = 1 / 20
+
+function moveBackground(event) {
+    const shapes = document.querySelectorAll(".shape")
+    const x = event.clientX * scaleFactor
+    const y = event.clientY * scaleFactor
+
+    for(let i = 0; i < shapes.length; ++i) {
+        const isOdd = i % 2 !== 0
+        const oddShapesNumber = isOdd ? -1 : 1
+        shapes[i].style.transform = `translate(${x * oddShapesNumber}px, ${y * oddShapesNumber}px)`
+    }
+}
