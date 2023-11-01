@@ -373,6 +373,41 @@ nav {
   font-weight: 600;
 }
 
+/* SHAPES */
+
+.shape {
+  position: fixed;
+  opacity: 0.5;
+}
+
+.shape--0 {
+  top: 15vh;
+  left: 40vw;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.shape--1 {
+  top: 70vh;
+  left: 40vw;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.shape--2 {
+  top: 10vh;
+  left: 70vw;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.shape--3 {
+  top: 50vh;
+  left: 70vw;
+  max-width: 500px;
+  max-height: 500px;
+}
+
 /* PROJECTS */
 #projects {
   height: 70vh;
