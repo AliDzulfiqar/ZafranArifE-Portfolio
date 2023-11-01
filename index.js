@@ -44,24 +44,11 @@ function contact(event) {
     });
 }
 
-// let isDarkMode = false;
-
-// function toggleContrast() {
-//   isDarkMode = !isDarkMode;
-//   if (isDarkMode) {
-//     document.body.classList += " dark-theme";
-//   } else {
-//     document.body.classList.remove("dark-theme");
-//   }
-// }
-
-// Initialize isDarkMode based on localStorage, or default to false if not set.
 let isDarkMode = localStorage.getItem("isDarkMode") === "true" || false;
 
 function toggleContrast() {
     isDarkMode = !isDarkMode;
     
-    // Update the localStorage to remember the user's choice.
     localStorage.setItem("isDarkMode", isDarkMode);
     
     if (isDarkMode) {
@@ -71,11 +58,9 @@ function toggleContrast() {
     }
 }
 
-// When the page loads, set the dark mode class based on the stored value.
 if (isDarkMode) {
     document.body.classList.add("dark-theme");
 }
-
 
 const slidesContainer = document.getElementById("slides-container");
 const slide = document.querySelector(".slide");
