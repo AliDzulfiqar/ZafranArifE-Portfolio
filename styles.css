@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Satisfy&display=swap');
 
 * {
   margin: 0;
@@ -167,9 +166,9 @@ nav {
 }
 
 .landing__intro {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 90px;
+  font-family: "Satisfy", sans-serif;
+  font-weight: 100;
+  font-size: 110px;
 }
 
 .landing__title {
