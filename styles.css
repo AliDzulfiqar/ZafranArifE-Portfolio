@@ -693,7 +693,6 @@ nav {
 }
 
 .modal__sub-title {
-  margin: 12px 0 24px 0;
   font-size: 16px;
   text-align: center;
 }
@@ -851,6 +850,17 @@ nav {
 
 .modal__photo {
   max-width: 150px;
+}
+
+.email__wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__icon--copy {
+  margin: 10px;
 }
 
 .modal__footer {
