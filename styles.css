@@ -638,7 +638,7 @@ nav {
   transform: translate(-50%, -50%);
   width: 90%;
   max-width: 1100px;
-  height: 700px;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -649,7 +649,6 @@ nav {
 
 .modal__wrapper {
   width: 100%;
-  padding: 40px 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -668,6 +667,7 @@ nav {
 }
 
 .modal__title {
+  margin-top: 40px;
   font-size: 64px;
   text-align: center;
 }
@@ -813,8 +813,7 @@ nav {
 .modal__inner--right {
   width: 40%;
   text-align: center;
-  padding: 20px;
-  margin: 40px;
+  margin: 60px;
 }
 
 .modal__icon--left {
@@ -826,15 +825,24 @@ nav {
 }
 
 .modal__icon--right {
-  background-color: #fffbf8;
   color: #0277b5;
   font-size: 110px;
-  border-radius: 20%;
-  padding: 10px;
+  margin: 10px;
 }
 
 .modal__photo {
   max-width: 150px;
+}
+
+.modal__footer {
+  background-color: #231f20;
+  color: #fffbf8;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  border-radius: 20px;
 }
 /* FOOTER */
 footer {
@@ -972,10 +980,29 @@ textarea:focus {
 }
 
 .dark-theme .modal__contact {
-  background-color: #fffbf8;
-  color: black;
+  background-color: #231f20;
+  color: #fffbf8;
 }
 
+.dark-theme .modal__footer {
+  color: #231f20;
+  background-color: #fffbf8;
+}
+
+
+.dark-theme .modal__icon--left {
+  background-color: #0277b5;
+  color: white;
+  font-size: 80px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.dark-theme .modal__icon--right {
+  color: #0277b5;
+  font-size: 110px;
+  margin: 10px;
+}
 .dark-theme .form__submit {
   background-color: #0277b5;
   border: 2px solid #0277b5;
@@ -1005,5 +1032,5 @@ textarea:focus {
 }
 
 .dark-theme .modal__exit {
-  color: #231f20;
+  color: #fffbf8;
 }

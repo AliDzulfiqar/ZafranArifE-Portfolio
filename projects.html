@@ -74,37 +74,26 @@
 
     <div class="modal">
       <div class="modal__wrapper modal__contact">
-          <i href="#" class="fas fa-times modal__exit click" onclick="exit()"></i>
-          <h3 class="modal__title modal__title--contact">
-              REACH ME OUT
-          </h3>
-          <h3 class="modal__sub-title modal__title--contact">
+        <i href="#" class="fas fa-times modal__exit click" onclick="exit()"></i>
+        <h3 class="modal__title modal__title--contact">REACH ME OUT</h3>
+        <div class="modal__inner--wrapper">
+          <div class="modal__inner--left">
+            <i class="fas fa-envelope modal__icon--left"></i>
+            <h3 class="modal__sub-title">zafranarif@gmail.com</h3>
+          </div>
+          <div class="modal__inner--right">
+            <i class="fab fa-linkedin modal__icon--right"></i>
+            <h3 class="modal__sub-title">Zafran Akhmadery Arif</h3>
+          </div>
+        </div>
+        <div class="modal__footer">
+          <h3 class="modal__footer--text">
             Pullman, Washington
-            <br>GMT+7
+            <br />GMT -7
           </h3>
-          <form onsubmit="contact(event)" id="contact__form">
-              <div class="form__item">
-                  <label class="form__item--label">Name</label>
-                  <input type="text" class="input" name="user_name" required></input>
-              </div>
-              <div class="form__item">
-                  <label class="form__item--label">Email</label>
-                  <input type="email" class="input" name="user_email" required></input>
-              </div>
-              <div class="form__item">
-                  <label class="form__item--label">Message</label>
-                  <textarea type="text" class="input" name="message" required></textarea>
-              </div>
-              <button id="contact__submit" class="form__submit">Send it my way!</button>
-          </form>
-          <div class="modal__overlay modal__overlay--loading">
-              <i class="fas fa-spinner"></i>
-          </div>
-          <div class="modal__overlay modal__overlay--success">
-              Thanks for the message! Looking forward to speaking to you soon!
-          </div>
+        </div>
       </div>
-  </div>
+    </div>
 
     <section id="projects">
       <div class="container">
