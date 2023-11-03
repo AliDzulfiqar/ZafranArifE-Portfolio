@@ -288,12 +288,28 @@ nav {
 }
 
 .scroll__more-below {
-  font-size: 48px;
+  font-size: 18px;
   position: absolute;
   top: 80vh;
   left: 15vw;
-
+  color: #231f20;
+  display: flex;
 }
+
+.scroll__more-below--icon {
+  background-color: #004aad;
+  color: white;
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 4px;
+  margin-left: 4px;
+}
+
+.scroll__more-below:hover {
+  color: #004aad;
+}
+
+
 /* TECHSTACK */
 #technology__stack {
   min-height: 100vh;
@@ -672,7 +688,7 @@ nav {
 
 .modal__title {
   margin-top: 40px;
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
 }
 
@@ -1041,4 +1057,16 @@ textarea:focus {
 
 .dark-theme .modal__exit {
   color: #fffbf8;
+}
+
+.dark-theme .scroll__more-below {
+  color: #fffbf8;
+}
+
+.dark-theme .scroll__more-below:hover {
+  color: #0277b5;
+}
+
+.dark-theme .scroll__more-below--icon {
+  background-color: #0277b5;
 }
