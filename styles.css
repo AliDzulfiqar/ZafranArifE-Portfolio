@@ -1110,6 +1110,31 @@ textarea:focus {
   .row {
     max-width: 600px;
   }
+
+  .scroll__more-below {
+    visibility: hidden;
+  }
+
+  #landing {
+    min-height: 40vh;
+  }
+  
+  .about__row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about__wrapper {
+    max-width: 600px;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+
+  .about__wrapper--left {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
