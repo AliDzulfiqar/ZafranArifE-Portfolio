@@ -143,7 +143,7 @@ nav {
 }
 
 .nav__link {
-  margin: 0 12px;
+  margin: 0 20px;
 }
 
 .nav__link--anchor {
@@ -215,12 +215,15 @@ nav {
 }
 
 .profile-picture {
-  width: 100%;
+  width: 80%;
   border-radius: 20px;
 }
 
 .landing__wrapper--right {
   width: 50%;
+  justify-content: center;
+  text-align: center;
+
   z-index: 1;
 }
 
@@ -267,16 +270,21 @@ nav {
 }
 
 .social__link {
-  background-color: black;
   color: white;
   padding: 6px;
   width: 32px;
   margin-right: 12px;
-  font-size: 18px;
+  justify-content: center;
+}
+
+.social__link--icon {
+  padding: 2px;
+  width: 48px;
+  margin-right: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+
 }
 
 /* TECHSTACK */
@@ -304,6 +312,8 @@ nav {
   width: 20%;
   display: flex;
   position: relative;
+  justify-content: center;
+  text-align: center;
 }
 
 .techstack__img--wrapper {
@@ -870,7 +880,6 @@ textarea:focus {
   }
   
 .dark-theme .social__link {
-  background-color: #fffbf8;
   color: #231f20;
 }
 
