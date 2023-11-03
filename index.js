@@ -51,3 +51,20 @@ prevButton.addEventListener("click", () => {
   const slideWidth = slide.clientWidth;
   slidesContainer.scrollLeft -= slideWidth;
 });
+
+function copyToClipboard() {
+  var tempInput = document.createElement("input");
+
+  tempInput.value = "zafranarif99@gmail.com";
+
+  document.body.appendChild(tempInput);
+
+  tempInput.select();
+  tempInput.setSelectionRange(0, 99999); 
+
+  document.execCommand("copy");
+
+  document.body.removeChild(tempInput);
+
+  alert("Email copied to clipboard!");
+}
