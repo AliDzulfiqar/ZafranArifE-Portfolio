@@ -341,6 +341,13 @@ nav {
 }
 
 /* ABOUT */
+.about__row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
 .about__wrapper {
   padding: 20px;
   display: flex;
@@ -368,9 +375,15 @@ nav {
 
 .about__title {
   text-align: start;
-  font-size: 48px;
+  font-size: 80px;
   position: relative;
   font-family: "League Spartan", sans-serif;
+}
+
+.about__para {
+  text-align: justify;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .section__title {
