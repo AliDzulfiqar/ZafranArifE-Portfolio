@@ -10,9 +10,6 @@
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
   </head>
   <body>
     <section>
@@ -21,7 +18,7 @@
           <li class="nav__link">
             <a
               href="index.html"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black click  nav__link--active"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black click nav__link--active"
               >home</a
             >
           </li>
@@ -67,44 +64,35 @@
     </section>
 
     <div class="modal">
-        <div class="modal__wrapper modal__contact">
-            <i href="#" class="fas fa-times modal__exit click" onclick="exit()"></i>
-            <h3 class="modal__title modal__title--contact">
-                REACH ME OUT
-            </h3>
-            <h3 class="modal__sub-title modal__title--contact">
-              Pullman, Washington
-              <br>GMT+7
-            </h3>
-            <form onsubmit="contact(event)" id="contact__form">
-                <div class="form__item">
-                    <label class="form__item--label">Name</label>
-                    <input type="text" class="input" name="user_name" required></input>
-                </div>
-                <div class="form__item">
-                    <label class="form__item--label">Email</label>
-                    <input type="email" class="input" name="user_email" required></input>
-                </div>
-                <div class="form__item">
-                    <label class="form__item--label">Message</label>
-                    <textarea type="text" class="input" name="message" required></textarea>
-                </div>
-                <button id="contact__submit" class="form__submit">Send it my way!</button>
-            </form>
-            <div class="modal__overlay modal__overlay--loading">
-                <i class="fas fa-spinner"></i>
-            </div>
-            <div class="modal__overlay modal__overlay--success">
-                Thanks for the message! Looking forward to speaking to you soon!
-            </div>
+      <div class="modal__wrapper modal__contact">
+        <i href="#" class="fas fa-times modal__exit click" onclick="exit()"></i>
+        <h3 class="modal__title modal__title--contact">REACH ME OUT</h3>
+        <div class="modal__inner--wrapper">
+          <div class="modal__inner--left">
+            <i class="fas fa-envelope modal__icon--left"></i>
+            <h3 class="modal__sub-title">zafranarif@gmail.com</h3>
+          </div>
+          <div class="modal__inner--right">
+            <i class="fab fa-linkedin modal__icon--right"></i>
+            <h3 class="modal__sub-title">Zafran Akhmadery Arif</h3>
+          </div>
         </div>
+        <div class="modal__subtitle--wrapper">
+          <h3 class="modal__sub-title modal__title--contact">
+            Pullman, Washington
+            <br />GMT -7
+          </h3>
+        </div>
+      </div>
     </div>
-    
 
     <section id="landing">
       <div class="container">
         <div class="row">
           <div class="landing__wrapper">
+            <a href="#about" class="scroll__more-below">
+              <p>More below!</p>
+            </a>
             <div class="landing__wrapper--left">
               <h1 class="landing__intro light__mode--blue">Introducing</h1>
               <h1 class="landing__title">
@@ -129,47 +117,43 @@
                   class="social__link click"
                   target="_blank"
                 >
-                <figure>
-                  <img
-                    src="./assets/icons8-linkedin.svg"
-                    class="social__link--icon"
-                  />
-                </figure>
+                  <figure>
+                    <img
+                      src="./assets/icons8-linkedin.svg"
+                      class="social__link--icon"
+                    />
+                  </figure>
                 </a>
                 <a
                   href="https://www.instagram.com/zafranarif99"
                   class="social__link click"
                   target="_blank"
                 >
-                <figure>
-                  <img
-                    src="./assets/icons8-instagram.svg"
-                    class="social__link--icon"
-                  />
-                </figure>
+                  <figure>
+                    <img
+                      src="./assets/icons8-instagram.svg"
+                      class="social__link--icon"
+                    />
+                  </figure>
                 </a>
                 <a
                   href="https://github.com/zafranarif99"
                   class="social__link click"
                   target="_blank"
                 >
-                <figure>
-                  <img
-                    src="./assets/icons8-github.svg"
-                    class="social__link--icon"
-                  />
-                </figure>
+                  <figure>
+                    <img
+                      src="./assets/icons8-github.svg"
+                      class="social__link--icon"
+                    />
+                  </figure>
                 </a>
               </div>
             </div>
-            <!-- <a href="#about" class="scroll scroll__techstack">
-              <div class="scroll__icon click"></div>
-            </a> -->
           </div>
         </div>
       </div>
     </section>
-
 
     <section id="about">
       <div class="container">
@@ -178,14 +162,22 @@
             <div class="about__wrapper--left">
               <h1 class="about__title">ABOUT ME</h1>
               <p class="section__para">
-                <br />Zafran, a young mathematician from Washington State University, is a prominent leader. Notably serving as the Secretary-General of the Overseas Indonesian Students' Association Alliance (OISAA/PPI Dunia).
+                <br />Zafran, a young mathematician from Washington State
+                University, is a prominent leader. Notably serving as the
+                Secretary-General of the Overseas Indonesian Students'
+                Association Alliance (OISAA/PPI Dunia).
 
                 <br />
                 <br />
-                He is a dedicated digital literacy enthusiast with a strong passion in data science and machine learning, driven to apply his knowledge to real-world problems.
+                He is a dedicated digital literacy enthusiast with a strong
+                passion in data science and machine learning, driven to apply
+                his knowledge to real-world problems.
 
                 <br />
-                <br />With his unique combination of leadership, mathematical prowess, and passion for digital literacy, Zafran is poised to make significant contributions in both academic and professional domains.
+                <br />With his unique combination of leadership, mathematical
+                prowess, and passion for digital literacy, Zafran is poised to
+                make significant contributions in both academic and professional
+                domains.
               </p>
               <br />
               <h1 class="light__mode--blue">Adept in:</h1>
@@ -228,9 +220,7 @@
                       class="techstack__img"
                     />
                   </figure>
-                  <span class="techstack__name"
-                    >Microsoft Office Excel</span
-                  >
+                  <span class="techstack__name">Microsoft Office Excel</span>
                 </div>
                 <div class="techstack">
                   <figure class="techstack__img--wrapper">
@@ -240,9 +230,7 @@
                       class="techstack__img"
                     />
                   </figure>
-                  <span class="techstack__name"
-                    >LaTeX</span
-                  >
+                  <span class="techstack__name">LaTeX</span>
                 </div>
               </div>
             </div>
@@ -253,7 +241,7 @@
       <img src="./assets/ymxb.png" class="shape shape--0" alt="" />
       <img src="./assets/b24ac.png" class="shape shape--1" alt="" />
       <img src="./assets/ball.png" class="shape shape--2" alt="" />
-      <img src="./assets/cube.png" class="shape shape--3"alt="">
+      <img src="./assets/cube.png" class="shape shape--3" alt="" />
     </section>
 
     <footer>

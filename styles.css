@@ -287,6 +287,13 @@ nav {
 
 }
 
+.scroll__more-below {
+  font-size: 48px;
+  position: absolute;
+  top: 80vh;
+  left: 15vw;
+
+}
 /* TECHSTACK */
 #technology__stack {
   min-height: 100vh;
@@ -661,7 +668,7 @@ nav {
 }
 
 .modal__title {
-  font-size: 40px;
+  font-size: 64px;
   text-align: center;
 }
 
@@ -694,8 +701,8 @@ nav {
 }
 
 .modal__contact {
-  background-color: #231f20;
-  color: white;
+  background-color: #fffbf8;
+  color: #231f20;
   transform: translateX(110%);
 }
 
@@ -771,7 +778,7 @@ nav {
   position: absolute;
   top: 30px;
   right: 40px;
-  color: #fffbf8;
+  color: #231f20;
   font-size: 36px;
   z-index: 100;
 }
@@ -787,6 +794,48 @@ nav {
   transform: translateX(0%);
 }
 
+.modal__subtitle--wrapper {
+  border:1px #231f20;
+}
+.modal__inner--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__inner--left {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  margin: 40px;
+}
+
+.modal__inner--right {
+  width: 40%;
+  text-align: center;
+  padding: 20px;
+  margin: 40px;
+}
+
+.modal__icon--left {
+  background-color: #0277b5;
+  color: white;
+  font-size: 80px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.modal__icon--right {
+  background-color: #fffbf8;
+  color: #0277b5;
+  font-size: 110px;
+  border-radius: 20%;
+  padding: 10px;
+}
+
+.modal__photo {
+  max-width: 150px;
+}
 /* FOOTER */
 footer {
   background: #1c1d25;
