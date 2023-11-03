@@ -469,6 +469,10 @@ nav {
   color: #231f20;
 }
 
+.project:hover {
+  color: #004aad;
+}
+
 .italic {
   font-style: italic;
 }
@@ -955,6 +959,10 @@ textarea:focus {
 
 .dark-theme .project {
   color: #fffbf8;
+}
+
+.dark-theme .project:hover {
+  color: #0277b5;
 }
 
 .dark-theme .activities__description {
