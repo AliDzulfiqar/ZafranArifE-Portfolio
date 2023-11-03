@@ -1139,6 +1139,20 @@ textarea:focus {
   .slides-container {
     width: auto;
   }
+
+  .footer__copyright {
+    text-align: center;
+  }
+
+  .project__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project__wrapper--left, .project__wrapper--right{
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1146,31 +1160,36 @@ textarea:focus {
   .title--secondary {
       font-size: 52px;
   }
+
+  .nav__link {
+    margin: 0 6px;
+  }
   
   .header__para {
       font-size: 18px;
   }
 
-  .nav__link:first-child {
-      display: none;
-  }
-
-  .project__description--para {
-      display: none;
-  }
-
-  .project__description {
-      left: 0;
-      padding: 0;
-      width: 100%;
-      text-align: center;
-  }
-
-  .project__description--sub-title {
-      margin-bottom: 8px;
-  }
-
   .modal__half {
       padding: 40px;
+  }
+
+  .about__title {
+    font-size: 32px;
+  }
+
+  .landing__intro {
+    font-size: 32px;
+  }
+
+  .landing__title {
+    font-size: 48px;
+  }
+
+  .landing__description {
+    font-size: 20px;
+  }
+
+  .row {
+    max-width: auto;
   }
 }
