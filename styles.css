@@ -1123,7 +1123,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
   }
-  
+
   .about__wrapper {
     max-width: 600px;
   }
@@ -1134,6 +1134,10 @@ textarea:focus {
 
   .about__wrapper--left {
     width: 100%;
+  }
+
+  .slides-container {
+    width: auto;
   }
 }
 
