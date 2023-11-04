@@ -1,4 +1,5 @@
 let isModalOpen = false;
+let isBurgerOpen = false;
 
 function exit() {
   toggleModal();
@@ -6,6 +7,14 @@ function exit() {
   const success = document.querySelector(".modal__overlay--success");
   loading.classList.remove("modal__overlay--visible");
   success.classList.remove("modal__overlay--visible");
+}
+
+function exitBurger() {
+  toggleBurger();
+  const loading = document.querySelector(".burger__overlay--loading");
+  const success = document.querySelector(".burger__overlay--success");
+  loading.classList.remove("burger__overlay--visible");
+  success.classList.remove("burger__overlay--visible");
 }
 
 function toggleModal() {
@@ -17,6 +26,17 @@ function toggleModal() {
   isModalOpen = true;
   console.log(isModalOpen);
   document.body.classList += " modal--open";
+}
+
+function toggleBurger() {
+  if (isBurgerOpen) {
+    isBurgerOpen = false;
+    console.log(isBurgerOpen);
+    return document.body.classList.remove("burger--open");
+  }
+  isBurgerOpen = true;
+  console.log(isBurgerOpen);
+  document.body.classList += " burger--open";
 }
 
 let isDarkMode = localStorage.getItem("isDarkMode") === "true" || false;
