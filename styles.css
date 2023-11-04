@@ -268,6 +268,7 @@ nav {
 .social__list {
   margin-top: 16px;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -287,6 +288,11 @@ nav {
   justify-content: center;
   align-items: center;
 
+}
+
+.github--logo {
+  color: #231f20;
+  font-size: 34px;
 }
 
 .scroll__more-below {
@@ -1088,6 +1094,9 @@ textarea:focus {
   background-color: #0277b5;
 }
 
+.dark-theme .github--logo {
+  color: #fffbf8;
+}
 
 /* RESPONSIVE DESIGN */
 /* Small phones, tablets, large smart phones */
