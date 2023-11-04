@@ -1,4 +1,4 @@
 # ZafranArifE-Portfolio
-E-Portfolio Repository for Zafran Arif - BuildWebFast
-This is a vry yeahh e port.
-yeahh
+E-Portfolio Repository for Zafran Arif - BuildWebFast 
+ <br /> 
+This e-portfolio contains my projects, activities, and publications.

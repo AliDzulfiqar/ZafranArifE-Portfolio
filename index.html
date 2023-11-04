@@ -1,276 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Zafran Arif's E-Portfolio</title>
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <section>
-      <nav>
-        <ul class="nav__link--list">
-          <li class="nav__link">
-            <a
-              href="index.html"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black click nav__link--active"
-              >home</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="index.html#about"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black click"
-              >about</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="projects.html"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black click"
-              >projects</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="activities.html"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black click"
-              >activities</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="#"
-              onclick="toggleModal()"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black click"
-              >contacts</a
-            >
-          </li>
-          <li class="nav__link click" onclick="toggleContrast()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              <i class="fas fa-adjust"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-    </section>
 
-    <div class="modal">
-      <div class="modal__wrapper modal__contact">
-        <i href="#" class="fas fa-times modal__exit click" onclick="exit()"></i>
-        <h3 class="modal__title modal__title--contact">REACH ME OUT</h3>
-        <div class="modal__inner--wrapper">
-          <div class="modal__inner--left">
-            <i class="fas fa-envelope modal__icon--left"></i>
-            <div class="email__wrapper">
-              <h3 class="modal__sub-title">zafranarif@gmail.com</h3>
-              <i class="fas fa-copy modal__icon--copy" onclick="copyToClipboard()"></i>
-            </div>
-          </div>
-          <div class="modal__inner--right">
-            <i class="fab fa-linkedin modal__icon--right"></i>
-            <h3 class="modal__sub-title">Zafran Akhmadery Arif</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Zafran Arif's E-Portfolio</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section>
+    <nav>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="index.html"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black click nav__link--active">home</a>
+        </li>
+        <li class="nav__link">
+          <a href="index.html#about"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black click">about</a>
+        </li>
+        <li class="nav__link">
+          <a href="projects.html"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black click">projects</a>
+        </li>
+        <li class="nav__link">
+          <a href="activities.html"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black click">activities</a>
+        </li>
+        <li class="nav__link">
+          <a href="#" onclick="toggleModal()"
+            class="nav__link--anchor link__hover-effect link__hover-effect--black click">contacts</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">
+            <i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <div class="modal">
+    <div class="modal__wrapper modal__contact">
+      <i href="#" class="fas fa-times modal__exit click" onclick="exit()"></i>
+      <h3 class="modal__title modal__title--contact">REACH ME OUT</h3>
+      <div class="modal__inner--wrapper">
+        <div class="modal__inner--left">
+          <i class="fas fa-envelope modal__icon--left"></i>
+          <div class="email__wrapper">
+            <h3 class="modal__sub-title">zafranarif@gmail.com</h3>
+            <i class="fas fa-copy modal__icon--copy" onclick="copyToClipboard()"></i>
           </div>
         </div>
-        <div class="modal__footer">
-          <h3 class="modal__footer--text">
-            Pullman, Washington
-            <br />GMT -7
-          </h3>
+        <div class="modal__inner--right">
+          <a href="https://www.linkedin.com/in/zafranarif99/" target="_blank">
+            <figure>
+              <img src="./assets/icons8-linkedin.svg"  class="modal__icon--right"/>
+            </figure>
+          </a>
+          <h3 class="modal__sub-title">Zafran Akhmadery Arif</h3>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <h3 class="modal__footer--text">
+          Pullman, Washington
+          <br />GMT -07.00
+        </h3>
+      </div>
+    </div>
+  </div>
+
+  <section id="landing">
+    <div class="container">
+      <div class="row">
+        <div class="landing__wrapper">
+          <a href="#about" class="scroll__more-below">
+            More below! <i class="fas fa-arrow-down scroll__more-below--icon"></i>
+          </a>
+          <div class="landing__wrapper--left">
+            <h1 class="landing__intro light__mode--blue">Introducing</h1>
+            <h1 class="landing__title">
+              <a class="hollow__text">ZAFRAN</a> ARIF
+            </h1>
+            <h2 class="landing__description">
+              Mathematics, Leadership, Digital Literacy.
+            </h2>
+          </div>
+          <div class="landing__wrapper--right">
+            <figure>
+              <img src="./assets/Profile picture_new.jpeg" alt="" class="profile-picture" />
+            </figure>
+
+            <div class="social__list">
+              <a href="https://www.linkedin.com/in/zafranarif99/" class="social__link click" target="_blank">
+                <figure>
+                  <img src="./assets/icons8-linkedin.svg" class="social__link--icon" />
+                </figure>
+              </a>
+              <a href="https://www.instagram.com/zafranarif99" class="social__link click" target="_blank">
+                <figure>
+                  <img src="./assets/icons8-instagram.svg" class="social__link--icon" />
+                </figure>
+              </a>
+              <a href="https://github.com/zafranarif99" class="social__link click" target="_blank">
+                <div class="github--logo">
+                  <i class="fab fa-github social__link--icon"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="about__row">
+        <div class="about__wrapper">
+          <div class="about__wrapper--left">
+            <h1 class="about__title">ABOUT ME</h1>
+            <p class="section__para">
+              <br />Zafran, a young mathematician from Washington State
+              University, is a prominent leader. Notably serving as the
+              Secretary-General of the Overseas Indonesian Students'
+              Association Alliance (OISAA/PPI Dunia).
+
+              <br />
+              <br />
+              He is a dedicated digital literacy enthusiast with a strong
+              passion in data science and machine learning, driven to apply
+              his knowledge to real-world problems.
+
+              <br />
+              <br />With his unique combination of leadership, mathematical
+              prowess, and passion for digital literacy, Zafran is poised to
+              make significant contributions in both academic and professional
+              domains.
+            </p>
+            <br />
+            <h1 class="light__mode--blue">Adept in:</h1>
+            <div class="techstack__list">
+              <div class="techstack">
+                <figure class="techstack__img--wrapper">
+                  <img src="./assets/icons8-r-project-240.png" alt="" class="techstack__img" />
+                </figure>
+                <span class="techstack__name">R</span>
+              </div>
+              <div class="techstack">
+                <figure class="techstack__img--wrapper">
+                  <img src="./assets/icons8-matlab-240.png" alt="" class="techstack__img" />
+                </figure>
+                <span class="techstack__name">MATLAB</span>
+              </div>
+              <div class="techstack">
+                <figure class="techstack__img--wrapper">
+                  <img src="./assets/icons8-python-480.png" alt="" class="techstack__img" />
+                </figure>
+                <span class="techstack__name">Python</span>
+              </div>
+              <div class="techstack">
+                <figure class="techstack__img--wrapper">
+                  <img src="./assets/icons8-microsoft-excel-480.png" alt="" class="techstack__img" />
+                </figure>
+                <span class="techstack__name">Excel</span>
+              </div>
+              <div class="techstack">
+                <figure class="techstack__img--wrapper">
+                  <img src="./assets/AarYf.png" alt="" class="techstack__img" />
+                </figure>
+                <span class="techstack__name">LaTeX</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <section id="landing">
-      <div class="container">
-        <div class="row">
-          <div class="landing__wrapper">
-            <a href="#about" class="scroll__more-below">
-              <span>More below! <i class="fas fa-arrow-down scroll__more-below--icon"></i></span>    
-            </a>
-            <div class="landing__wrapper--left">
-              <h1 class="landing__intro light__mode--blue">Introducing</h1>
-              <h1 class="landing__title">
-                <a class="hollow__text">ZAFRAN</a> ARIF
-              </h1>
-              <h2 class="landing__description">
-                Mathematics, Leadership, Digital Literacy.
-              </h2>
-            </div>
-            <div class="landing__wrapper--right">
-              <figure>
-                <img
-                  src="./assets/Profile picture_new.jpeg"
-                  alt=""
-                  class="profile-picture"
-                />
-              </figure>
+    <img src="./assets/ymxb.png" class="shape shape--0" alt="" />
+    <img src="./assets/b24ac.png" class="shape shape--1" alt="" />
+    <img src="./assets/ball.png" class="shape shape--2" alt="" />
+    <img src="./assets/cube.png" class="shape shape--3" alt="" />
+  </section>
 
-              <div class="social__list">
-                <a
-                  href="https://www.linkedin.com/in/zafranarif99/"
-                  class="social__link click"
-                  target="_blank"
-                >
-                  <figure>
-                    <img
-                      src="./assets/icons8-linkedin.svg"
-                      class="social__link--icon"
-                    />
-                  </figure>
-                </a>
-                <a
-                  href="https://www.instagram.com/zafranarif99"
-                  class="social__link click"
-                  target="_blank"
-                >
-                  <figure>
-                    <img
-                      src="./assets/icons8-instagram.svg"
-                      class="social__link--icon"
-                    />
-                  </figure>
-                </a>
-                <a
-                  href="https://github.com/zafranarif99"
-                  class="social__link click"
-                  target="_blank"
-                >
-                  <figure>
-                    <img
-                      src="./assets/icons8-github.svg"
-                      class="social__link--icon"
-                    />
-                  </figure>
-                </a>
-              </div>
-            </div>
-          </div>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <div class="footer__social--list">
+          <a href="https://www.linkedin.com/in/zafranarif99/" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            LINKEDIN
+          </a>
+          <a href="https://www.instagram.com/zafranarif99/" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            INSTAGRAM
+          </a>
+          <a href="https://www.github.com/zafranarif99/" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            GITHUB
+          </a>
+        </div>
+        <div class="footer__copyright">
+          E-Portfolio designed by BuildWebFast
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
+</body>
 
-    <section id="about">
-      <div class="container">
-        <div class="about__row">
-          <div class="about__wrapper">
-            <div class="about__wrapper--left">
-              <h1 class="about__title">ABOUT ME</h1>
-              <p class="section__para">
-                <br />Zafran, a young mathematician from Washington State
-                University, is a prominent leader. Notably serving as the
-                Secretary-General of the Overseas Indonesian Students'
-                Association Alliance (OISAA/PPI Dunia).
-
-                <br />
-                <br />
-                He is a dedicated digital literacy enthusiast with a strong
-                passion in data science and machine learning, driven to apply
-                his knowledge to real-world problems.
-
-                <br />
-                <br />With his unique combination of leadership, mathematical
-                prowess, and passion for digital literacy, Zafran is poised to
-                make significant contributions in both academic and professional
-                domains.
-              </p>
-              <br />
-              <h1 class="light__mode--blue">Adept in:</h1>
-              <div class="techstack__list">
-                <div class="techstack">
-                  <figure class="techstack__img--wrapper">
-                    <img
-                      src="./assets/icons8-r-project-240.png"
-                      alt=""
-                      class="techstack__img"
-                    />
-                  </figure>
-                  <span class="techstack__name">R</span>
-                </div>
-                <div class="techstack">
-                  <figure class="techstack__img--wrapper">
-                    <img
-                      src="./assets/icons8-matlab-240.png"
-                      alt=""
-                      class="techstack__img"
-                    />
-                  </figure>
-                  <span class="techstack__name">MATLAB</span>
-                </div>
-                <div class="techstack">
-                  <figure class="techstack__img--wrapper">
-                    <img
-                      src="./assets/icons8-python-480.png"
-                      alt=""
-                      class="techstack__img"
-                    />
-                  </figure>
-                  <span class="techstack__name">Python</span>
-                </div>
-                <div class="techstack">
-                  <figure class="techstack__img--wrapper">
-                    <img
-                      src="./assets/icons8-microsoft-excel-480.png"
-                      alt=""
-                      class="techstack__img"
-                    />
-                  </figure>
-                  <span class="techstack__name">Microsoft Office Excel</span>
-                </div>
-                <div class="techstack">
-                  <figure class="techstack__img--wrapper">
-                    <img
-                      src="./assets/AarYf.png"
-                      alt=""
-                      class="techstack__img"
-                    />
-                  </figure>
-                  <span class="techstack__name">LaTeX</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img src="./assets/ymxb.png" class="shape shape--0" alt="" />
-      <img src="./assets/b24ac.png" class="shape shape--1" alt="" />
-      <img src="./assets/ball.png" class="shape shape--2" alt="" />
-      <img src="./assets/cube.png" class="shape shape--3" alt="" />
-    </section>
-
-    <footer>
-      <div class="container">
-        <div class="row footer__row">
-          <div class="footer__social--list">
-            <a
-              href="https://www.linkedin.com/in/zafranarif99/"
-              target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              LINKEDIN
-            </a>
-            <a
-              href="https://www.instagram.com/zafranarif99/"
-              target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              INSTAGRAM
-            </a>
-          </div>
-          <div class="footer__copyright">
-            E-Portfolio designed by BuildWebFast
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
