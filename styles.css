@@ -417,6 +417,7 @@ nav {
   font-size: 48px;
   position: relative;
   font-family: "League Spartan", sans-serif;
+  margin-top: 2em;
 }
 
 .section__para {
@@ -471,11 +472,13 @@ nav {
 .project__wrapper--left {
   width: 40%;
   text-align: center;
+  margin-bottom: 10em;
 }
 
 .project__wrapper--right {
   width: 40%;
   text-align: center;
+  margin-bottom: 10em;
 }
 
 .project__wrapper--title {
