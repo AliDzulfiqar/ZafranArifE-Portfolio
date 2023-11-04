@@ -302,6 +302,7 @@ nav {
   left: 15vw;
   color: #231f20;
   display: flex;
+  z-index: 1;
 }
 
 .scroll__more-below--icon {
