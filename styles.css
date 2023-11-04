@@ -145,6 +145,7 @@ nav {
 
 .nav__link {
   margin: 0 20px;
+  z-index: 1;
 }
 
 .nav__link--anchor {
