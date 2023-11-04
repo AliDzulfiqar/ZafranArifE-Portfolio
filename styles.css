@@ -856,8 +856,7 @@ nav {
 
 .modal__icon--right {
   color: #0277b5;
-  font-size: 110px;
-  margin: 10px;
+  width: 120px;
 }
 
 .modal__photo {
@@ -1047,8 +1046,6 @@ textarea:focus {
 
 .dark-theme .modal__icon--right {
   color: #0277b5;
-  font-size: 110px;
-  margin: 10px;
 }
 .dark-theme .form__submit {
   background-color: #0277b5;
