@@ -163,7 +163,7 @@ nav {
 
 /* LANDING */
 #landing {
-  min-height: 85vh;
+  height: calc(100vh - 100px);
 }
 
 .landing__intro {
@@ -298,8 +298,8 @@ nav {
 .scroll__more-below {
   font-size: 18px;
   position: absolute;
-  top: 80vh;
-  left: 15vw;
+  top: 90vh;
+  left: 46.5vw;
   color: #231f20;
   display: flex;
   z-index: 1;
@@ -1099,21 +1099,6 @@ textarea:focus {
 /* RESPONSIVE DESIGN */
 /* Small phones, tablets, large smart phones */
 @media (max-width: 1076px) {
-
-  /* .modal {
-      top: 0;
-      left: 0;
-      transform: none;
-      height: auto;
-      width: 100%;
-      flex-direction: column-reverse;
-      border-radius: 0;
-  } */
-
-  .row {
-    max-width: 600px;
-  }
-
   .scroll__more-below {
     visibility: hidden;
   }
@@ -1160,66 +1145,57 @@ textarea:focus {
 
 @media (max-width: 768px) {
   .nav__link--list{
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
   }
   
   .burger__icon{
     font-size: 30px;
     visibility: visible !important;
+    margin-left: 40px;
+    margin-right: auto;
   }
 
   .modalBurger__half {
       width: 100%;
   }
 
-  .row {
-    max-width: 600px;
+ .row{
+    padding: 0 60px;
   }
 
-  .scroll__more-below {
-    visibility: hidden;
+  .landing__intro{
+    font-size: 40px;
   }
 
-  #landing {
-    min-height: 40vh;
-  }
-  
-  .about__row {
-    display: flex;
-    justify-content: center;
+  .landing__title{
+    font-size: 60px;
   }
 
-  .about__wrapper {
-    max-width: 600px;
+  .landing__description{
+    font-size: 17px;
   }
 
-  .about__title {
-    text-align: center;
+  .about__title{
+    font-size: 50px;
   }
 
-  .about__wrapper--left {
-    width: 100%;
-  }
-
-  .slides-container {
-    width: auto;
-  }
-
-  .footer__copyright {
-    text-align: center;
-  }
-
-  .project__wrapper {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project__wrapper--left, .project__wrapper--right{
-    width: 100%;
+  .container{
+    padding: 100px 0;
   }
 }
 
+@media (max-width: 655px) {
+  .landing__wrapper{
+    flex-direction: column;
+  }
+  .landing__description{
+    margin-bottom: 50px;
+  }
+  .light__mode--blue{
+    margin-top: 40px;
+  }
+}
 @media (max-width: 430px) {
   .nav__link--list{
     visibility: hidden;
@@ -1607,7 +1583,7 @@ textarea:focus {
   visibility: hidden;
 }
 
-/* BURGER DARK */
+/* DARK BURGER */
 .dark-theme .burger__about {
   background-color: rgb(2, 0, 0);
 }
@@ -1667,6 +1643,10 @@ textarea:focus {
 
 .dark-theme .burger__icon{
   color: white;
+}
+
+.dark-theme {
+  background-color: #231f20;
 }
 
 /*MODAL BURGER*/
