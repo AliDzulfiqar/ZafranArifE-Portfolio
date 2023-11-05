@@ -1098,25 +1098,9 @@ textarea:focus {
 
 /* RESPONSIVE DESIGN */
 /* Small phones, tablets, large smart phones */
-@media (max-width: 768px) {
-  .nav__link--list{
-    visibility: hidden;
-  }
-  .title, 
-  .title--secondary {
-      font-size: 80px;
-  }
-  
-  .header__para {
-      font-size: 20px;
-  }
-  
-  .burger__icon{
-    font-size: 30px;
-    visibility: visible !important;
-  }
+@media (max-width: 1076px) {
 
-  .modal {
+  /* .modal {
       top: 0;
       left: 0;
       transform: none;
@@ -1124,6 +1108,64 @@ textarea:focus {
       width: 100%;
       flex-direction: column-reverse;
       border-radius: 0;
+  } */
+
+  .row {
+    max-width: 600px;
+  }
+
+  .scroll__more-below {
+    visibility: hidden;
+  }
+
+  #landing {
+    min-height: 40vh;
+  }
+  
+  .about__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__wrapper {
+    max-width: 600px;
+  }
+
+  .about__title {
+    text-align: center;
+  }
+
+  .about__wrapper--left {
+    width: 100%;
+  }
+
+  .slides-container {
+    width: auto;
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
+
+  .project__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project__wrapper--left, .project__wrapper--right{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__link--list{
+    visibility: hidden;
+  }
+  
+  .burger__icon{
+    font-size: 30px;
+    visibility: visible !important;
   }
 
   .modalBurger__half {
@@ -1178,7 +1220,109 @@ textarea:focus {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
+  .nav__link--list{
+    visibility: hidden;
+  }
+  .title, 
+  .title--secondary {
+      font-size: 50px;
+  }
+
+  .nav__link {
+    margin: 0 6px;
+  }
+  
+  .header__para {
+    font-size: 18px;
+}
+  
+  .burger__icon{
+    font-size: 30px;
+    visibility: visible !important;
+  }
+
+  .modal {
+      top: 0;
+      left: 0;
+      transform: none;
+      height: auto;
+      width: 100%;
+      flex-direction: column-reverse;
+      border-radius: 0;
+  }
+
+  .modalBurger__half {
+      width: 40px;
+  }
+
+  .row {
+    max-width: 600px;
+  }
+
+  .scroll__more-below {
+    visibility: hidden;
+  }
+
+  #landing {
+    min-height: 40vh;
+  }
+
+  .landing__intro {
+    font-size: 32px;
+  }
+
+  .landing__title {
+    font-size: 48px;
+  }
+
+  .landing__description {
+    font-size: 20px;
+  }
+  
+  .about__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__wrapper {
+    max-width: 600px;
+  }
+
+  .about__title {
+    text-align: center;
+    font-size: 32px;
+  }
+
+  .about__wrapper--left {
+    width: 100%;
+  }
+
+  .slides-container {
+    width: auto;
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
+
+  .project__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project__wrapper--left, .project__wrapper--right{
+    width: 100%;
+  }
+
+  .row {
+    max-width: auto;
+  }
+}
+
+
+@media (max-width: 390px) {
   .title, 
   .title--secondary {
       font-size: 52px;
@@ -1683,7 +1827,7 @@ textarea:focus {
   visibility: visible;
   width: 50%;
   left: 65%;
-  top: 42%;
+  top: 51%;
 }
 
 .modalBurger--open .modalBurger__about,

@@ -10,6 +10,14 @@ function exit() {
   success.classList.remove("modal__overlay--visible");
 }
 
+function exitModalBurger() {
+  toggleModalBurger();
+  const loading = document.querySelector(".modalBurger__overlay--loading");
+  const success = document.querySelector(".modalBurger__overlay--success");
+  loading.classList.remove("modalBurger__overlay--visible");
+  success.classList.remove("modalBurger__overlay--visible");
+}
+
 function exitBurger() {
   toggleBurger();
   const loading = document.querySelector(".burger__overlay--loading");
