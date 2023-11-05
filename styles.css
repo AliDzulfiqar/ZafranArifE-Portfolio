@@ -1220,12 +1220,12 @@ textarea:focus {
 /*BURGER*/
 .burger {
   position: absolute;
-  margin-top: 80px;
+  margin-top: 130px;
   left: 25%;
   transform: translate(-50%, -50%);
   width: 25%;
   max-width: 1000px;
-  height: auto;
+  height: 300px;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -1445,12 +1445,12 @@ textarea:focus {
 }
 
 .burger__link--anchor {
-  font-size: 16px;
+  font-size: 24px;
   color: #231f20;
 }
 
 .burger__link--anchor:hover {
-  font-size: 16px;
+  font-size: 24px;
   color: #004aad;
 }
 
@@ -1508,17 +1508,17 @@ textarea:focus {
 }
 
 .dark-theme .burger__link--anchor {
-  font-size: 16px;
+  font-size: 24px;
   color: #fffbf8;
 }
 
 .dark-theme .burger__link--anchor:hover {
-  font-size: 16px;
-  color: #004aad;
+  font-size: 24px;
+  color: #0277b5;
 }
 
 .dark-theme .burger--active {
-  color: #004aad;
+  color: #0277b5;
 }
 
 .dark-theme .burger__icon{
