@@ -1126,7 +1126,7 @@ textarea:focus {
       border-radius: 0;
   }
 
-  .modal__half {
+  .modalBurger__half {
       width: 100%;
   }
 
@@ -1523,4 +1523,230 @@ textarea:focus {
 
 .dark-theme .burger__icon{
   color: white;
+}
+
+/*MODAL BURGER*/
+.modalBurger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  visibility: hidden;
+  z-index: -1;
+  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.modalBurger__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  transition: all 300ms ease-in;
+}
+
+.modalBurger__about {
+  background-color: rgb(245, 245, 245);
+  transform: translateX(-110%);
+}
+
+.modalBurger__photos--wrapper {
+  width: 45%;
+  margin-top: 10px;
+}
+
+.modalBurger__title {
+  margin-top: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.modalBurger__sub-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.modalBurger__para {
+  margin-bottom: 12px;
+  line-height: 1.75;
+}
+
+.modalBurger__language:hover {
+  filter: brightness(80%);
+  transform: scale(0.9);
+  transition: all 600ms ease;
+}
+
+.modalBurger__language:hover .language__name {
+  transform: scale(1);
+}
+
+.language__name {
+  position: absolute;
+  bottom: -10px;
+  transform: scale(0);
+  transition: all 300ms ease;
+}
+
+.modalBurger__contact {
+  background-color: #fffbf8;
+  color: #231f20;
+  transform: translateX(110%);
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__submit {
+  background-color: #004aad;
+  border: 2px solid #004aad;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  max-width: 240px;
+  padding: 12px 24px;
+  font-size: 20px;
+}
+
+.form__submit:hover {
+  border-color: #fffbf8;
+  background-color: transparent;
+}
+
+.form__submit:active {
+  border-color: #004aad;
+  color: #004aad;
+}
+
+.modalBurger__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.modalBurger__overlay--visible {
+  z-index: 1;
+  display: flex;
+}
+
+.modalBurger__overlay--loading {
+  background-color: #231f20;
+  font-size: 80px;
+}
+
+.modalBurger__overlay--success {
+  background-color: #004aad;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 28px;
+}
+
+.fa-spinner {
+  animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modalBurger__exit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #231f20;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.modalBurger--open .modalBurger {
+  z-index: 60;
+  box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
+  visibility: visible;
+  width: 50%;
+  left: 65%;
+  top: 42%;
+}
+
+.modalBurger--open .modalBurger__about,
+.modalBurger--open .modalBurger__contact {
+  transform: translateX(0%);
+}
+
+.modalBurger__subtitle--wrapper {
+  border:1px #231f20;
+}
+.modalBurger__inner--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalBurger__inner--left {
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  margin: 40px;
+}
+
+.modalBurger__inner--right {
+  width: 50%;
+  text-align: center;
+}
+
+.modalBurger__icon--left {
+  background-color: #0277b5;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.modalBurger__icon--right {
+  color: #0277b5;
+  width: 60px;
+}
+
+.modalBurger__photo {
+  max-width: 150px;
+}
+
+.email__wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalBurger__icon--copy {
+  margin: 10px;
+}
+
+.modalBurger__footer {
+  background-color: #231f20;
+  color: #fffbf8;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  border-radius: 0px;
 }

@@ -1,5 +1,6 @@
 let isModalOpen = false;
 let isBurgerOpen = false;
+let isModalBurgerOpen = false;
 
 function exit() {
   toggleModal();
@@ -26,6 +27,17 @@ function toggleModal() {
   isModalOpen = true;
   console.log(isModalOpen);
   document.body.classList += " modal--open";
+}
+
+function toggleModalBurger() {
+  if (isModalBurgerOpen) {
+    isModalBurgerOpen = false;
+    console.log(isModalBurgerOpen);
+    return document.body.classList.remove("modalBurger--open");
+  }
+  isModalBurgerOpen = true;
+  console.log(isModalBurgerOpen);
+  document.body.classList += " modalBurger--open";
 }
 
 function toggleBurger() {

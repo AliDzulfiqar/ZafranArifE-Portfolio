@@ -67,7 +67,7 @@
               class="burger__link--anchor link__hover-effect link__hover-effect--black click">activities</a>
           </li>
           <li class="burger__link">
-            <a href="#" onclick="toggleModal()"
+            <a href="#" onclick="toggleModalBurger()"
               class="burger__link--anchor link__hover-effect link__hover-effect--black click">contacts</a>
           </li>
           <li class="burger__link click" onclick="toggleContrast()">
@@ -75,6 +75,34 @@
               <i class="fas fa-adjust"></i></a>
           </li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modalBurger">
+    <div class="modalBurger__wrapper modalBurger__contact">
+      <i href="#" class="fas fa-times modalBurger__exit click" onclick="exit()"></i>
+      <h3 class="modalBurger__title modalBurger__title--contact">REACH ME OUT</h3>
+      <div class="modalBurger__inner--wrapper">
+        <div class="modalBurger__inner--left">
+          <i class="fas fa-envelope modalBurger__icon--left"></i>
+          <div class="email__wrapper">
+            <h3 class="modalBurger__sub-title">zafranarif@gmail.com</h3>
+            <i class="fas fa-copy modalBurger__icon--copy" onclick="copyToClipboard()"></i>
+          </div>
+          <a href="https://www.linkedin.com/in/zafranarif99/" target="_blank">
+            <figure>
+              <img src="./assets/icons8-linkedin.svg" class="modalBurger__icon--right" />
+            </figure>
+          </a>
+          <h3 class="modalBurger__sub-title">Zafran Akhmadery Arif</h3>
+        </div>
+      </div>
+      <div class="modalBurger__footer">
+        <h3 class="modalBurger__footer--text">
+          Pullman, Washington
+          <br />GMT -07.00
+        </h3>
       </div>
     </div>
   </div>
