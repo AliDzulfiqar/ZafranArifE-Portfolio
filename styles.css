@@ -1196,146 +1196,63 @@ textarea:focus {
     margin-top: 40px;
   }
 }
-@media (max-width: 430px) {
-  .nav__link--list{
-    visibility: hidden;
-  }
-  .title, 
-  .title--secondary {
-      font-size: 50px;
+@media (max-width: 483px) {
+  .burger--open .burger{
+    left: 40%;
+    width: 50%;
   }
 
-  .nav__link {
-    margin: 0 6px;
+  .landing__title{
+    font-size: 35px;
   }
-  
-  .header__para {
-    font-size: 18px;
-}
-  
-  .burger__icon{
-    font-size: 30px;
-    visibility: visible !important;
+  .landing__description{
+    font-size: 10pt;
   }
 
-  .modal {
-      top: 0;
-      left: 0;
-      transform: none;
-      height: auto;
-      width: 100%;
-      flex-direction: column-reverse;
-      border-radius: 0;
+  .landing__wrapper--right{
+    margin-left: -10pt;
   }
 
-  .modalBurger__half {
-      width: 40px;
+  .profile-picture{
+    width: 150%;
+    margin-left: -17pt;
   }
 
-  .row {
-    max-width: 600px;
-  }
-
-  .scroll__more-below {
-    visibility: hidden;
-  }
-
-  #landing {
-    min-height: 40vh;
-  }
-
-  .landing__intro {
-    font-size: 32px;
-  }
-
-  .landing__title {
-    font-size: 48px;
-  }
-
-  .landing__description {
+  .modalBurger__title{
+    margin-top: 60px;
     font-size: 20px;
   }
-  
-  .about__row {
-    display: flex;
-    justify-content: center;
-  }
-
-  .about__wrapper {
-    max-width: 600px;
-  }
-
-  .about__title {
-    text-align: center;
-    font-size: 32px;
-  }
-
-  .about__wrapper--left {
-    width: 100%;
-  }
-
-  .slides-container {
-    width: auto;
-  }
-
-  .footer__copyright {
-    text-align: center;
-  }
-
-  .project__wrapper {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project__wrapper--left, .project__wrapper--right{
-    width: 100%;
-  }
-
-  .row {
-    max-width: auto;
-  }
 }
 
 
-@media (max-width: 390px) {
-  .title, 
-  .title--secondary {
-      font-size: 52px;
+/* @media (max-width: 391px) {
+  .burger--open .burger{
+    left: 40%;
+    width: 50%;
   }
 
-  .nav__link {
-    margin: 0 6px;
+  .landing__title{
+    font-size: 35px;
   }
-  
-  .header__para {
-      font-size: 18px;
-  }
-
-  .modal__half {
-      padding: 40px;
+  .landing__description{
+    font-size: 10pt;
   }
 
-  .about__title {
-    font-size: 32px;
+  .landing__wrapper--right{
+    margin-left: -10pt;
   }
 
-  .landing__intro {
-    font-size: 32px;
+  .profile-picture{
+    width: 150%;
+    margin-left: -17pt;
   }
 
-  .landing__title {
-    font-size: 48px;
-  }
-
-  .landing__description {
+  .modalBurger__title{
+    margin-top: 60px;
     font-size: 20px;
   }
 
-  .row {
-    max-width: auto;
-  }
-}
+} */
 
 /*BURGER*/
 .burger {
