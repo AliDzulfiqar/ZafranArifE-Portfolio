@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { Switch } from "@mui/material";
 
 export const Nav = styled.div`
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${({ theme }) => theme.white};
   height: 80px;
   display: flex;
   align-items: center;
@@ -30,17 +30,6 @@ export const NavbarContainer = styled.div`
   max-width: 1200px;
 `;
 
-export const NavLogo = styled(LinkR)`
-  width: 80%;
-  padding: 0 6px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-decoration: none;
-  @media (max-width: 640px) {
-    padding: 0 0px;
-  }
-`;
 
 export const Span = styled.div`
   padding: 0 4px;
@@ -66,15 +55,14 @@ export const NavLink = styled.a`
   color: ${({ theme }) => theme.black};
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; 
   text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.text_primary};
-  }
+
+  &:hover {
+    color: ${({ theme }) => theme.primary}; 
 
   &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.button};
-  }
+    border-bottom: 2px solid ${({ theme }) => theme.primary}; 
 `;
 
 export const MobileIcon = styled.div`
@@ -101,7 +89,7 @@ export const MobileMenu = styled.div`
   right: 0;
   width: 100%;
   padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.bg};
+  background: ${({ theme }) => theme.white};
   transition: all 0.6s ease-in-out;
   transform: ${({ isOpen }) =>
     isOpen ? "translateY(0)" : "translateY(-100%)"};
@@ -128,12 +116,12 @@ export const MobileMenuLink = styled(LinkR)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.text_primary};
+  &:hover {
+    color: ${({ theme }) => theme.black};
   }
 
   &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.black};
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
 `;
 
@@ -143,12 +131,12 @@ export const MobileLink = styled.a`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.text_primary};
+  &:hover {
+    color: ${({ theme }) => theme.primary};
   }
 
   &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.black};
+    border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
 `;
 
