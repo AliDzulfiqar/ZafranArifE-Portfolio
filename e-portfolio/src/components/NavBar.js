@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
-const NavBar = () => {
+const NavBar = ({ activePage }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   function toggleModal() {
     if (isModalOpen) {
       setIsModalOpen(false);
@@ -20,35 +21,48 @@ const NavBar = () => {
     <nav>
       <ul className="nav__link--list">
         <li className="nav__link">
-          <Link
+          <NavLink
             to="/"
-            className="nav__link--anchor link__hover-effect link__hover-effect--black click nav__link--active"
+            className={({ isActive }) =>
+              isActive
+                ? "nav__link--anchor nav__link--active link__hover-effect link__hover-effect--black click"
+                : "nav__link--anchor link__hover-effect link__hover-effect--black click"
+            }
           >
             home
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__link">
-          <a href="/#about"
+          <a
+            href="/#about"
             className="nav__link--anchor link__hover-effect link__hover-effect--black click"
           >
             about
           </a>
         </li>
         <li className="nav__link">
-          <Link
+          <NavLink
             to="/projects"
-            className="nav__link--anchor link__hover-effect link__hover-effect--black click nav__link--active"
+            className={({ isActive }) =>
+              isActive
+                ? "nav__link--anchor nav__link--active link__hover-effect link__hover-effect--black click"
+                : "nav__link--anchor link__hover-effect link__hover-effect--black click"
+            }
           >
             projects
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__link">
-          <Link
+          <NavLink
             to="/activities"
-            className="nav__link--anchor link__hover-effect link__hover-effect--black click nav__link--active"
+            className={({ isActive }) =>
+              isActive
+                ? "nav__link--anchor nav__link--active link__hover-effect link__hover-effect--black click"
+                : "nav__link--anchor link__hover-effect link__hover-effect--black click"
+            }
           >
             activities
-          </Link>
+          </NavLink>
         </li>
         <li className="nav__link">
           <a
