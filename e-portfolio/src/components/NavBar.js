@@ -1,22 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 
-const NavBar = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  function toggleModal() {
-    if (isModalOpen) {
-      setIsModalOpen(false);
-      console.log(isModalOpen);
-      document.body.classList.remove("modal--open");
-    } else {
-      setIsModalOpen(true);
-      console.log(isModalOpen);
-      document.body.classList.add("modal--open");
-    }
-  }
-
+const NavBar = ({ toggleModal }) => {
   return (
     <nav>
       <ul className="nav__link--list">
