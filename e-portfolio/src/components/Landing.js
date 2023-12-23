@@ -5,21 +5,18 @@ import { FaGithub } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import profilePicture from "../assets/Profile picture.jpeg";
+import Typewriter from "typewriter-effect";
 
 const Landing = () => {
+  const headline = ['Mathematics.', 'Leadership.', 'Digital Literacy.']
+
   return (
     <>
       <section id="landing">
         <div className="container">
           <div className="row">
             <div className="landing__wrapper">
-              <a href="#about" className="scroll__more-below">
-                More below!{" "}
-                <FontAwesomeIcon
-                  icon={faArrowDown}
-                  className="scroll__more-below--icon"
-                />
-              </a>
+              
               <div className="landing__wrapper--left">
                 <h1 className="landing__intro light__mode--blue">
                   Introducing
@@ -28,8 +25,23 @@ const Landing = () => {
                   <span className="hollow__text">ZAFRAN</span> ARIF
                 </h1>
                 <h2 className="landing__description">
-                  Mathematics, Leadership, Digital Literacy.
+                  <Typewriter
+                  options={{
+                    strings: headline,
+                    autoStart: true,
+                    loop: true,
+                    delay: 10,
+                    deleteSpeed: 50,
+                  }}
+                />
                 </h2>
+                <a href="#about" className="scroll__more-below">
+                More below!{" "}
+                <FontAwesomeIcon
+                  icon={faArrowDown}
+                  className="scroll__more-below--icon"
+                />
+              </a>
               </div>
               <div className="landing__wrapper--right">
                 <figure>

@@ -1,9 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Switch } from "@mui/material";
 import { FaBars } from "react-icons/fa";
 
 const NavBar = ({ toggleModal, check, change }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToAbout = () => {
+    // Check if we're already on the Home page
+    if (location.pathname === "/") {
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "auto" });
+      }
+    } else {
+      // Navigate to Home page and then scroll to About
+      navigate("/", { state: { scrollToAbout: true } });
+    }
+  };
   return (
     <section>
       <nav>
@@ -22,7 +38,11 @@ const NavBar = ({ toggleModal, check, change }) => {
           </li>
           <li className="nav__link">
             <a
-              href="/#about"
+              href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToAbout();
+              }}
               className="nav__link--anchor link__hover-effect link__hover-effect--black click"
             >
               about

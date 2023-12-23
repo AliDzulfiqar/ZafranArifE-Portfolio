@@ -3,6 +3,7 @@ import linkedInIcon from "../assets/icons8-linkedin.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = ({ closeModal }) => {
   const copyToClipboard = () => {
@@ -21,10 +22,11 @@ const Contact = ({ closeModal }) => {
     <>
       <div className="modal">
         <div className="modal__wrapper modal__contact">
-          <i
+          <FontAwesomeIcon
+            icon={faTimes}
+            className="modal__exit click"
             onClick={closeModal}
-            className="fas fa-times modal__exit click"
-          ></i>
+          />
           <h3 className="modal__title modal__title--contact">REACH ME OUT</h3>
           <div className="modal__inner--wrapper">
             <div className="modal__inner--left">
@@ -32,12 +34,11 @@ const Contact = ({ closeModal }) => {
                 icon={faEnvelope}
                 className="modal__icon--left"
               />
-              ;
               <div className="email__wrapper">
                 <h3 className="modal__sub-title">zafranarif@gmail.com</h3>
                 <FontAwesomeIcon
                   icon={faCopy}
-                  className="modal__icon--copy"
+                  className="modal__icon--copy click"
                   onClick={copyToClipboard}
                 />
               </div>

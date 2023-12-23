@@ -6,12 +6,11 @@ import Projects from "./pages/Projects";
 import Activities from "./pages/Activities";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { ThemeProvider } from "./utils/ThemeContext";
 import { useState, useEffect } from "react";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const [darkMode, setDarkMode] = useState(false);
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
@@ -20,9 +19,16 @@ function App() {
     document.body.classList.toggle("modal--open", isModalOpen);
   }, [isModalOpen]);
 
-  const [darkMode, setDarkMode] = useState(false);
+  useEffect(() => {
+    if (darkMode) {
+      document.body.setAttribute('data-theme', 'dark');
+    } else {
+      document.body.removeAttribute('data-theme');
+    }
+  }, [darkMode]);
+
+  
   return (
-    <ThemeProvider>
         <Router>
           <NavBar check={darkMode} change={() => setDarkMode(!darkMode)} toggleModal={toggleModal} />
           {isModalOpen && <Contact closeModal={toggleModal} />}
@@ -33,7 +39,6 @@ function App() {
           </Routes>
           <Footer />
         </Router>
-    </ThemeProvider>
   );
 }
 
