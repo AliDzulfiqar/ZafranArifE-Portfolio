@@ -20,10 +20,11 @@ function App() {
     document.body.classList.toggle("modal--open", isModalOpen);
   }, [isModalOpen]);
 
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <ThemeProvider>
         <Router>
-          <NavBar toggleModal={toggleModal} />
+          <NavBar check={darkMode} change={() => setDarkMode(!darkMode)} toggleModal={toggleModal} />
           {isModalOpen && <Contact closeModal={toggleModal} />}
           <Routes>
             <Route path="/" element={<Home />} />
