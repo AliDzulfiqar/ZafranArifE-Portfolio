@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ThemeToggle from "../utils/ThemeToggle";
 
 const NavBar = ({ toggleModal }) => {
   return (
@@ -57,6 +58,7 @@ const NavBar = ({ toggleModal }) => {
             contacts
           </a>
         </li>
+        <ThemeToggle /> 
       </ul>
     </nav>
   );

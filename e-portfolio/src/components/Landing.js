@@ -1,52 +1,90 @@
 import React from "react";
-
+import linkedinIcon from "../assets/icons8-linkedin.svg"; // adjust the path as necessary
+import instagramIcon from "../assets/icons8-instagram.svg"; // adjust the path as necessary
+import { FaGithub } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import profilePicture from "../assets/Profile picture.jpeg";
 
 const Landing = () => {
   return (
     <>
       <section id="landing">
-    <div className="container">
-      <div className="row">
-        <div className="landing__wrapper">
-          <a href="#about" className="scroll__more-below">
-            More below! <i className="fas fa-arrow-down scroll__more-below--icon"></i>
-          </a>
-          <div className="landing__wrapper--left">
-            <h1 className="landing__intro light__mode--blue">Introducing</h1>
-            <h1 className="landing__title">
-              <a className="hollow__text">ZAFRAN</a> ARIF
-            </h1>
-            <h2 className="landing__description">
-              Mathematics, Leadership, Digital Literacy.
-            </h2>
-          </div>
-          <div className="landing__wrapper--right">
-            <figure>
-              <img src="./assets/Profile picture_new.jpeg" alt="" className="profile-picture" />
-            </figure>
+        <div className="container">
+          <div className="row">
+            <div className="landing__wrapper">
+              <a href="#about" className="scroll__more-below">
+                More below!{" "}
+                <FontAwesomeIcon
+                  icon={faArrowDown}
+                  className="scroll__more-below--icon"
+                />
+              </a>
+              <div className="landing__wrapper--left">
+                <h1 className="landing__intro light__mode--blue">
+                  Introducing
+                </h1>
+                <h1 className="landing__title">
+                  <span className="hollow__text">ZAFRAN</span> ARIF
+                </h1>
+                <h2 className="landing__description">
+                  Mathematics, Leadership, Digital Literacy.
+                </h2>
+              </div>
+              <div className="landing__wrapper--right">
+                <figure>
+                  <img
+                    src={profilePicture}
+                    alt="ProfilePicture" 
+                    className="profile-picture"
+                  />
+                </figure>
 
-            <div className="social__list">
-              <a href="https://www.linkedin.com/in/zafranarif99/" className="social__link click" target="_blank">
-                <figure>
-                  <img src="./assets/icons8-linkedin.svg" className="social__link--icon" />
-                </figure>
-              </a>
-              <a href="https://www.instagram.com/zafranarif99" className="social__link click" target="_blank">
-                <figure>
-                  <img src="./assets/icons8-instagram.svg" className="social__link--icon" />
-                </figure>
-              </a>
-              <a href="https://github.com/zafranarif99" className="social__link click" target="_blank">
-                <div className="github--logo">
-                  <i className="fab fa-github social__link--icon"></i>
+                <div className="social__list">
+                  <a
+                    href="https://www.linkedin.com/in/zafranarif99/"
+                    className="social__link click"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <figure>
+                      <img
+                        src={linkedinIcon}
+                        alt="LinkedIn"
+                        className="social__link--icon"
+                      />
+                    </figure>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/zafranarif99"
+                    className="social__link click"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <figure>
+                      <img
+                        src={instagramIcon}
+                        alt="Instagram"
+                        className="social__link--icon"
+                      />
+                    </figure>
+                  </a>
+                  <a
+                    href="https://github.com/zafranarif99"
+                    className="social__link click"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div className="github--logo">
+                      <FaGithub className="social__link--icon" />
+                    </div>
+                  </a>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
     </>
   );
 };

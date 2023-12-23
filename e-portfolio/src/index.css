@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Satisfy&display=swap');
 
+/* Light Theme */
+:root {
+  --color-white: #fffbf8;
+  --color-black: #231f20;
+  --color-primary: #004aad;
+}
+
+/* Dark Theme */
+[data-theme='dark'] {
+  --color-white: #231f20;
+  --color-black: #fffbf8;
+  --color-primary: #0277b5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +30,7 @@ li {
 }
 
 section {
-  background-color: #fffbf8;
+  background-color: var(--color-white);
   transition: all 600ms ease;
 }
 
@@ -31,7 +45,7 @@ section {
   height: 3px;
   width: 0;
   right: 0;
-  background-color: black;
+  background-color: var();
   transition: all 300ms ease;
 }
 
@@ -128,6 +142,7 @@ textarea:focus {
 /* NAVIGATION BAR */
 
 nav {
+  background-color: var(--color-white);
   display: flex;
   justify-content: center;
   align-items: center;

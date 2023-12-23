@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Activities from "./pages/Activities";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { ThemeProvider } from "./utils/ThemeContext";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -16,20 +17,22 @@ function App() {
   };
 
   useEffect(() => {
-    document.body.classList.toggle('modal--open', isModalOpen);
+    document.body.classList.toggle("modal--open", isModalOpen);
   }, [isModalOpen]);
 
   return (
-    <Router>
-      <NavBar toggleModal={toggleModal}/>
-      {isModalOpen && <Contact closeModal={toggleModal} />}
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/projects" element={<Projects/>}/>
-        <Route path="/activities" element={<Activities/>}/>
-      </Routes>
-      <Footer />
-    </Router>
+    <ThemeProvider>
+        <Router>
+          <NavBar toggleModal={toggleModal} />
+          {isModalOpen && <Contact closeModal={toggleModal} />}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/activities" element={<Activities />} />
+          </Routes>
+          <Footer />
+        </Router>
+    </ThemeProvider>
   );
 }
 
