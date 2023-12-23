@@ -1,15 +1,31 @@
 import React from "react";
+import ymxbImage from "../assets/ymxb.png";
+import b24acImage from "../assets/b24ac.png";
+import ballImage from "../assets/ball.png";
+import cubeImage from "../assets/cube.png";
+import rLogo from "../assets/icons8-r-project-240.png";
+import matlabLogo from "../assets/icons8-matlab-240.png";
+import pythonLogo from "../assets/icons8-python-480.png";
+import excelLogo from "../assets/icons8-microsoft-excel-480.png";
+import latexLogo from "../assets/AarYf.png";
 
 const About = () => {
+  const techStacks = [
+    { name: "R", logo: rLogo },
+    { name: "MATLAB", logo: matlabLogo },
+    { name: "Python", logo: pythonLogo },
+    { name: "Excel", logo: excelLogo },
+    { name: "LaTeX", logo: latexLogo },
+  ];
   return (
     <>
       <section id="about">
-        <div class="container">
-          <div class="about__row">
-            <div class="about__wrapper">
-              <div class="about__wrapper--left">
-                <h1 class="about__title">ABOUT ME</h1>
-                <p class="section__para">
+        <div className="container">
+          <div className="about__row">
+            <div className="about__wrapper">
+              <div className="about__wrapper--left">
+                <h1 className="about__title">ABOUT ME</h1>
+                <p className="section__para">
                   <br />
                   Zafran, a young mathematician from Washington State
                   University, is a prominent leader. Notably serving as the
@@ -28,68 +44,30 @@ const About = () => {
                   professional domains.
                 </p>
                 <br />
-                <h1 class="light__mode--blue">Adept in:</h1>
-                <div class="techstack__list">
-                  <div class="techstack">
-                    <figure class="techstack__img--wrapper">
-                      <img
-                        src="./assets/icons8-r-project-240.png"
-                        alt=""
-                        class="techstack__img"
-                      />
-                    </figure>
-                    <span class="techstack__name">R</span>
-                  </div>
-                  <div class="techstack">
-                    <figure class="techstack__img--wrapper">
-                      <img
-                        src="./assets/icons8-matlab-240.png"
-                        alt=""
-                        class="techstack__img"
-                      />
-                    </figure>
-                    <span class="techstack__name">MATLAB</span>
-                  </div>
-                  <div class="techstack">
-                    <figure class="techstack__img--wrapper">
-                      <img
-                        src="./assets/icons8-python-480.png"
-                        alt=""
-                        class="techstack__img"
-                      />
-                    </figure>
-                    <span class="techstack__name">Python</span>
-                  </div>
-                  <div class="techstack">
-                    <figure class="techstack__img--wrapper">
-                      <img
-                        src="./assets/icons8-microsoft-excel-480.png"
-                        alt=""
-                        class="techstack__img"
-                      />
-                    </figure>
-                    <span class="techstack__name">Excel</span>
-                  </div>
-                  <div class="techstack">
-                    <figure class="techstack__img--wrapper">
-                      <img
-                        src="./assets/AarYf.png"
-                        alt=""
-                        class="techstack__img"
-                      />
-                    </figure>
-                    <span class="techstack__name">LaTeX</span>
-                  </div>
+                <h1 className="light__mode--blue">Adept in:</h1>
+                <div className="techstack__list">
+                  {techStacks.map((tech, index) => (
+                    <div className="techstack" key={index}>
+                      <figure className="techstack__img--wrapper">
+                        <img
+                          src={tech.logo}
+                          alt={`${tech.name} logo`} // It's a good practice to provide meaningful alt text for accessibility
+                          className="techstack__img"
+                        />
+                      </figure>
+                      <span className="techstack__name">{tech.name}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <img src="./assets/ymxb.png" class="shape shape--0" alt="" />
-        <img src="./assets/b24ac.png" class="shape shape--1" alt="" />
-        <img src="./assets/ball.png" class="shape shape--2" alt="" />
-        <img src="./assets/cube.png" class="shape shape--3" alt="" />
+        <img src={ymxbImage} className="shape shape--0" alt="yxmb" />
+        <img src={b24acImage} className="shape shape--1" alt="b24ac" />
+        <img src={ballImage} className="shape shape--2" alt="ball" />
+        <img src={cubeImage} className="shape shape--3" alt="cube" />
       </section>
     </>
   );
