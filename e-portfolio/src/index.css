@@ -932,6 +932,24 @@ footer {
 /* RESPONSIVE DESIGN */
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
+  .landing__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .landing__wrapper--left {
+    width: auto;
+  }
+
+  .landing__wrapper--right {
+    
+    width: 50%;
+  }
+
+  .light__mode--blue {
+    margin-top: 1em;
+  }
   .title, 
   .title--secondary {
       font-size: 80px;
@@ -1023,10 +1041,6 @@ footer {
       font-size: 18px;
   }
 
-  .modal__half {
-      padding: 40px;
-  }
-
   .about__title {
     font-size: 32px;
   }
@@ -1045,5 +1059,9 @@ footer {
 
   .row {
     max-width: auto;
+  }
+
+  .modal__title {
+    margin-top: 2em;
   }
 }
