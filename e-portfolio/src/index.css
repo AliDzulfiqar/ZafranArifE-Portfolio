@@ -404,7 +404,7 @@ nav {
 }
 
 .about__wrapper--left {
-  width: 60%;
+  width: 80%;
   z-index: 2;
   overflow: hidden;
 }
@@ -430,7 +430,6 @@ nav {
   font-size: 48px;
   position: relative;
   font-family: "League Spartan", sans-serif;
-  margin-top: 2em;
   color: var(--color-black);
 }
 
@@ -483,13 +482,13 @@ nav {
 }
 
 .project__wrapper--left {
-  width: 40%;
+  width: 50%;
   text-align: center;
   margin: 5em;
 }
 
 .project__wrapper--right {
-  width: 40%;
+  width: 50%;
   text-align: center;
   margin: 5em;
 }
