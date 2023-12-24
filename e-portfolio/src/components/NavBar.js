@@ -2,8 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Switch } from "@mui/material";
+import { useState } from "react";
+import { FaBars } from "react-icons/fa";
 
 const NavBar = ({ toggleModal, check, change }) => {
+  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -22,6 +25,13 @@ const NavBar = ({ toggleModal, check, change }) => {
   return (
     <section>
       <nav>
+        <div className="nav__mobile--icon click">
+          <FaBars
+            onClick={() => {
+              setIsOpen(!isOpen);
+            }}
+          />
+        </div>
         <ul className="nav__link--list">
           <li className="nav__link">
             <NavLink
@@ -81,9 +91,95 @@ const NavBar = ({ toggleModal, check, change }) => {
           </li>
           <Switch defaultChecked onChange={change} checked={check} />
         </ul>
+        {isOpen && (
+          <div className="nav__mobile--menu" isOpen={isOpen}>
+            <NavLink 
+              to="/"
+              className="nav__mobile--link click"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              home
+            </NavLink>
+            <a
+              href="#about"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToAbout();
+              }}
+              className="nav__mobile--link click"
+            >
+              about
+            </a>
+            <NavLink 
+              to="/projects"
+              className="nav__mobile--link click"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              projects
+            </NavLink>
+            <NavLink 
+              to="/activities"
+              className="nav__mobile--link click"
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              activities
+            </NavLink>
+            <a
+              onClick={toggleModal}
+              className="nav__mobile--link click"
+            >
+              contacts
+            </a>
+            <Switch defaultChecked onChange={change} checked={check} />
+          </div>
+        )}
       </nav>
     </section>
   );
 };
+
+// {isOpen && (
+//   <MobileMenu isOpen={isOpen}>
+//     <MobileLink
+//       href="#about"
+//       onClick={() => {
+//         setIsOpen(!isOpen);
+//       }}
+//     >
+//       About
+//     </MobileLink>
+//     <MobileLink
+//       href="#skills"
+//       onClick={() => {
+//         setIsOpen(!isOpen);
+//       }}
+//     >
+//       Skills
+//     </MobileLink>
+//     <MobileLink
+//       href="#experience"
+//       onClick={() => {
+//         setIsOpen(!isOpen);
+//       }}
+//     >
+//       Experience
+//     </MobileLink>
+//     <MobileLink
+//       href="#projects"
+//       onClick={() => {
+//         setIsOpen(!isOpen);
+//       }}
+//     >
+//       Projects
+//     </MobileLink>
+//     <Switch defaultChecked onChange={change} checked={check} />
+//   </MobileMenu>
+// )}
 
 export default NavBar;
