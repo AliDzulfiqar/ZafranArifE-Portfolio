@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Switch } from "@mui/material";
-import { FaBars } from "react-icons/fa";
 
 const NavBar = ({ toggleModal, check, change }) => {
   const navigate = useNavigate();
